@@ -1,0 +1,19 @@
+contraseña incorrecta
+contraseña correcta
+123
+1234
+12345
+123456
+1234567
+12345678
+123456789
+123456789a
+123456789A
+lalalaalla
+batalladegallos
+wrong password
+penelo
+penelope
+jacinto
+jaz1234
+jerez1234
