@@ -1,16 +1,16 @@
 import socket
 
-ip = input("Ingrese la dirección IP a escanear: ")
+ip = input("Enter the IP address to scan: ")
 
-for puerto in range (1,65535):
+for port in range (1,65535):
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(5)
 
-    result = sock.connect_ex((ip, puerto))
+    result = sock.connect_ex((ip, port))
 
     if result == 0:
-        print("Puerto abiero: " + str(puerto))
+        print("Open Port: " + str(port))
         sock.close()
     else:
-        print("Puerto abierto: " + str(puerto))
+        print("Close Port: " + str(port))
