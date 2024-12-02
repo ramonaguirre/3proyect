@@ -1,14 +1,14 @@
 import string
 import random
 
-#Establece la longitud de la contraseña
+#Set the password length
 longitud = int(input("Ingrese el tamaño de la contraseña:"))
 
-#Genera los caracteres para usar en la contraseña
+#Generate the characters to use in the password
 caracteres = string.ascii_letters + string.digits + string.punctuation
 
-#Genera aleatoriamente la contraseña con la logitud especificada
+#Randomly generate the password with the specified length
 contrasena = "".join(random.choice(caracteres) for i in range(longitud))
 
-#Imprime la contraseña
+#Print the password
 print("La contraseña generada es: " + contrasena)
